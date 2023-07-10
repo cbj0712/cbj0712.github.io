@@ -1,0 +1,30 @@
+.gender-toggle {
+  $self: &;
+  width: 4em;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 9999px;
+  padding: .15em;
+  background-color: $sub-theme-color;
+  user-select: none;
+
+  &__highlight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    cursor: pointer;
+
+    &--activated {
+      border-radius: 9999px;
+      background-color: #fff;
+    }
+
+    #{$self}__icon {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
